@@ -3,8 +3,25 @@
 <head>
 <meta charset="UTF-8">
 <meta name="viewport" content="width=device-width, initial-scale=1.0">
-<title>Our team</title>
+<title>Our team | Biogeography Lab</title>
 <link rel="stylesheet" href="style.css">
+<style>
+.team .member {display:grid;grid-template-columns:180px minmax(0,1fr);gap:30px;margin:28px 0 42px;align-items:start;text-align:left}
+.team .portrait {width:180px;aspect-ratio:1;object-fit:cover;border-radius:8px;background:#e0e7e4}
+.team .portrait {display:grid;place-items:center;overflow:hidden;color:#65766e;font-size:.85rem}
+.team .portrait img {width:100%;height:100%;object-fit:cover;display:block}
+.team .portrait img[hidden] {display:none}
+.team .portrait span[hidden] {display:none}
+.team h3 {font-size:1.35rem;color:#1f3a5f;margin-bottom:5px}
+.team p {text-align:left;max-width:none;margin:0 0 12px;font-size:1rem}
+.team .role {color:#237d76;font-size:.95rem}
+.team .pending {color:#65766e;font-style:italic}
+.team .alumni {padding-left:20px;margin:12px 0 25px}
+.team .alumni li {margin-bottom:10px}
+.team h2 {margin-top:45px}
+.team .subheading {margin-top:25px;font-size:1.15rem}
+@media(max-width:600px){.team .member{grid-template-columns:1fr;gap:12px}.team .portrait{width:140px}}
+</style>
 </head>
 <body>
 <nav class="navbar"><div class="nav-container">
@@ -13,8 +30,164 @@
 <a href="biogeo_publications.html">Publications</a>
 <a href="biogeo_contact.html">Contact</a>
 </div></nav>
-<main class="container">
-<h1>Our team</h1><p class="intro">Laboratorio de Biogeografía · INECOL</p><h2>Principal investigator</h2><article class="member"><div class="portrait">Photo</div><div><h3>Nombre del investigador</h3><p class="role">Principal investigator</p><p>Research interests and academic background.</p><!-- Add website, ORCID and Google Scholar links here --></div></article><h2>Lab members</h2><div class="members"><article class="member"><div class="portrait">Photo</div><div><h3>Nombre</h3><p class="role">Researcher</p><p>Research interests.</p></div></article></div><h2>Students</h2><!-- Add student profiles here --><h2>Collaborators</h2><!-- Add collaborators here -->
+<main class="container team">
+<h1>Our team</h1>
+<section><h2>Principal Investigator</h2><!-- Profile: Andrés Lira Noriega. Upload foto_andres.jpg to the repository root. -->
+<article class="member">
+  <div class="portrait">
+    <img src="foto_andres.jpg" alt="Portrait of Andrés Lira Noriega" hidden onload="this.hidden=false;this.nextElementSibling.hidden=true" onerror="this.hidden=true;this.nextElementSibling.hidden=false">
+    <span>Photo pending</span>
+  </div>
+  <div class="bio">
+    <h3>Andrés Lira Noriega</h3>
+    <p class="role">Researcher, Investigadores por México program (CONAHCyT) · Instituto de Ecología, A.C. (INECOL) · 2014–present</p>
+    <!-- Add project title and profile links here when available. -->
+    <p>Andrés studies species distributions across multiple spatial and temporal scales. He combines data from natural history collections, field observations, and laboratory studies with ecological niche modeling, geographic information systems (GIS), and remote sensing to develop a predictive and descriptive understanding of why species occur where they do.</p><p>His current research focuses on predictive models for invasive species of agricultural and forestry importance, alongside collaborative projects in conservation biology and macroecology. He particularly enjoys collaborative research, which he sees as a productive way to learn and advance science together.</p>
+  </div>
+</article>
+</section>
+<section><h2>Current Lab Members</h2><section><h3 class="subheading">Postdoctoral Researchers</h3><!-- Profile: Yuliana. Upload foto_yuliana.jpg to the repository root. -->
+<article class="member">
+  <div class="portrait">
+    <img src="foto_yuliana.jpg" alt="Portrait of Yuliana" hidden onload="this.hidden=false;this.nextElementSibling.hidden=true" onerror="this.hidden=true;this.nextElementSibling.hidden=false">
+    <span>Photo pending</span>
+  </div>
+  <div class="bio">
+    <h3>Yuliana</h3>
+    
+    <!-- Add project title and profile links here when available. -->
+    <p class="pending">Biography coming soon.</p>
+  </div>
+</article>
+<!-- Profile: Adriana Calahorra-Oliart. Upload foto_adriana.jpg to the repository root. -->
+<article class="member">
+  <div class="portrait">
+    <img src="foto_adriana.jpg" alt="Portrait of Adriana Calahorra-Oliart" hidden onload="this.hidden=false;this.nextElementSibling.hidden=true" onerror="this.hidden=true;this.nextElementSibling.hidden=false">
+    <span>Photo pending</span>
+  </div>
+  <div class="bio">
+    <h3>Adriana Calahorra-Oliart</h3>
+    <p class="role">2025–present</p>
+    <!-- Add project title and profile links here when available. -->
+    <p>Adriana received her PhD from the Universidad Nacional Autónoma de México (UNAM) in 2022. Her research combines bioinformatics and evolutionary modeling to explore patterns of morphospace occupancy. She works primarily, though not exclusively, with phyllostomid bats.</p>
+  </div>
+</article>
+</section>
+<section><h3 class="subheading">PhD Students</h3><!-- Profile: Carlos Camacho. Upload foto_carlos.jpg to the repository root. -->
+<article class="member">
+  <div class="portrait">
+    <img src="foto_carlos.jpg" alt="Portrait of Carlos Camacho" hidden onload="this.hidden=false;this.nextElementSibling.hidden=true" onerror="this.hidden=true;this.nextElementSibling.hidden=false">
+    <span>Photo pending</span>
+  </div>
+  <div class="bio">
+    <h3>Carlos Camacho</h3>
+    <p class="role">2025–present</p>
+    <!-- Add project title and profile links here when available. -->
+    <p>Carlos is interested in patterns of biodiversity in tropical dry forests. His previous research has focused on community and population ecology. Outside of research, he enjoys going out dancing.</p>
+  </div>
+</article>
+<!-- Profile: Jorge Valencia. Upload foto_jorge.jpg to the repository root. -->
+<article class="member">
+  <div class="portrait">
+    <img src="foto_jorge.jpg" alt="Portrait of Jorge Valencia" hidden onload="this.hidden=false;this.nextElementSibling.hidden=true" onerror="this.hidden=true;this.nextElementSibling.hidden=false">
+    <span>Photo pending</span>
+  </div>
+  <div class="bio">
+    <h3>Jorge Valencia</h3>
+    
+    <!-- Add project title and profile links here when available. -->
+    <p class="pending">Biography coming soon.</p>
+  </div>
+</article>
+<!-- Profile: Dolores Angélica Ramírez Peña. Upload foto_dolores.jpg to the repository root. -->
+<article class="member">
+  <div class="portrait">
+    <img src="foto_dolores.jpg" alt="Portrait of Dolores Angélica Ramírez Peña" hidden onload="this.hidden=false;this.nextElementSibling.hidden=true" onerror="this.hidden=true;this.nextElementSibling.hidden=false">
+    <span>Photo pending</span>
+  </div>
+  <div class="bio">
+    <h3>Dolores Angélica Ramírez Peña</h3>
+    <p class="role">2019–2026 · Ecology, INECOL</p>
+    <!-- Add project title and profile links here when available. -->
+    <p class="pending">Biography coming soon.</p>
+  </div>
+</article>
+<!-- Profile: Alberto Astiazarán. Upload foto_alberto.jpg to the repository root. -->
+<article class="member">
+  <div class="portrait">
+    <img src="foto_alberto.jpg" alt="Portrait of Alberto Astiazarán" hidden onload="this.hidden=false;this.nextElementSibling.hidden=true" onerror="this.hidden=true;this.nextElementSibling.hidden=false">
+    <span>Photo pending</span>
+  </div>
+  <div class="bio">
+    <h3>Alberto Astiazarán</h3>
+    
+    <!-- Add project title and profile links here when available. -->
+    <p class="pending">Biography coming soon.</p>
+  </div>
+</article>
+</section>
+<section><h3 class="subheading">Master’s Students</h3><!-- Profile: Andrés Cruces. Upload foto_andres_cruces.jpg to the repository root. -->
+<article class="member">
+  <div class="portrait">
+    <img src="foto_andres_cruces.jpg" alt="Portrait of Andrés Cruces" hidden onload="this.hidden=false;this.nextElementSibling.hidden=true" onerror="this.hidden=true;this.nextElementSibling.hidden=false">
+    <span>Photo pending</span>
+  </div>
+  <div class="bio">
+    <h3>Andrés Cruces</h3>
+    
+    <!-- Add project title and profile links here when available. -->
+    <p class="pending">Biography coming soon.</p>
+  </div>
+</article>
+</section>
+<!-- Undergraduate Students: add profiles when available. -->
+</section>
+<section><h2>Lab Alumni</h2><h3 class="subheading">PhD Alumni</h3>
+<ul class="alumni">
+<li><strong>Uriel Valdez</strong></li>
+<li><strong>Jéssica Caroline de Faria Falçao</strong> — 2016–2020 · Conservation, INECOL</li>
+<li><strong>Eurídice Tinoco Domínguez</strong> — 2019–2023 · Ecology, INECOL</li>
+<li><strong>Edwin Rafael Ariza Marín</strong> — 2018–2022 · INECOL</li>
+<li><strong>Alfredo Esparza Orozco</strong> — Universidad de Zacatecas · PhD in progress</li>
+<li><strong>Lucas Alejandro Fadda Reñé</strong></li>
+</ul>
+<h3 class="subheading">Master’s Alumni</h3>
+<ul class="alumni">
+<li><strong>Héctor Ramírez Ortiz</strong> — 2015–2017 · Natural Resource Management, INECOL · Degree examination: January 12, 2018</li>
+<li><strong>María Chanel Juárez Ramírez</strong> — 2016–2018 · Ecology, INECOL · Degree examination: February 28, 2019</li>
+<li><strong>Alfredo Esparza Orozco</strong> — 2017–2019 · Innovation in Natural Resource Management, Colegio de Postgraduados, San Luis Potosí campus · Degree examination: June 11, 2019</li>
+<li><strong>Miriam Ortiz Reyes</strong> — 2017–2019 · Ecology, INECOL · Degree examination: February 5, 2020</li>
+<li><strong>Diana Ramírez Sánchez</strong> — 2018–2020 · Ecology, INECOL · Degree examination: September 30, 2020</li>
+<li><strong>Lucas Alejandro Fadda Reñé</strong> — 2019–2021 · Ecology, INECOL · Degree examination: August 31, 2021</li>
+</ul>
+<h3 class="subheading">Undergraduate Alumni</h3>
+<ul class="alumni">
+<li><strong>María Fernanda Cuevas</strong> — Biochemical Engineering, Instituto Tecnológico Superior de Xalapa · Degree examination: February 27, 2020</li>
+<li><strong>Gema Matzil Olguín Utrera</strong> — Biochemical Engineering, Instituto Tecnológico Superior de Xalapa · Degree examination: February 27, 2020</li>
+<li><strong>Brian Alexander Jiménez Vázquez</strong> — Biology, Universidad Veracruzana · Degree examination: February 20, 2020</li>
+<li><strong>Ángel Luis Robles Fernández</strong> — 2016–2017 · Physics, Universidad Veracruzana · Degree examination: September 11, 2017</li>
+<li><strong>Sonia Papaqui Bello</strong></li>
+<li><strong>Justo Reyes</strong> — Name to be confirmed</li>
+</ul>
+<h3 class="subheading">Social Service</h3>
+<ul class="alumni">
+<li><strong>Ángel Luis Robles Fernández</strong> — 2016</li>
+</ul>
+</section>
+<section><h2>Visiting Researchers</h2><!-- Profile: Rafa. Upload foto_rafa.jpg to the repository root. -->
+<article class="member">
+  <div class="portrait">
+    <img src="foto_rafa.jpg" alt="Portrait of Rafa" hidden onload="this.hidden=false;this.nextElementSibling.hidden=true" onerror="this.hidden=true;this.nextElementSibling.hidden=false">
+    <span>Photo pending</span>
+  </div>
+  <div class="bio">
+    <h3>Rafa</h3>
+    
+    <!-- Add project title and profile links here when available. -->
+    <p class="pending">Biography coming soon.</p>
+  </div>
+</article>
+</section>
 </main>
 </body>
 </html>
