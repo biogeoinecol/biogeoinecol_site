@@ -3,18 +3,38 @@
 <head>
 <meta charset="UTF-8">
 <meta name="viewport" content="width=device-width, initial-scale=1.0">
-<title>Publications</title>
+<title>Publications | Biogeography Lab</title>
 <link rel="stylesheet" href="style.css">
+<style>
+.publications-list { max-width: 850px; margin: 0 auto; text-align: left; }
+.publications-list .year { margin-top: 32px; }
+.references { list-style: none; padding: 0; }
+.references li { margin-bottom: 24px; padding-left: 2.5rem; position: relative; font-size: 1rem; line-height: 1.7; }
+.ref-number { position: absolute; left: 0; color: #237d76; font-weight: 600; }
+.references a { color: #237d76; text-decoration: underline; text-underline-offset: 3px; overflow-wrap: anywhere; }
+.references a:hover { color: #1f3a5f; }
+</style>
 </head>
 <body>
-<nav class="navbar"><div class="nav-container">
+<nav class="navbar" aria-label="Main navigation"><div class="nav-container">
 <a href="main.html">Main</a>
 <a href="biogeo_team.html">Team</a>
 <a href="biogeo_publications.html" class="active" aria-current="page">Publications</a>
 <a href="biogeo_contact.html">Contact</a>
 </div></nav>
 <main class="container">
-<h1>Publications</h1><p class="intro">Scientific contributions from our research group</p><h2 class="year">2026</h2><article class="publication"><h3>Title of the scientific publication</h3><p>Authors of the publication</p><p><em>Journal name, volume, pages.</em></p><!-- Add DOI and full text links here --></article><h2 class="year">2025</h2><!-- Add publications here -->
+<h1>Publications</h1>
+<div class="publications-list">
+<!-- Add newer years above this section. -->
+<section aria-labelledby="year-2024">
+<h2 class="year" id="year-2024">2024</h2>
+<ol class="references" reversed start="3">
+<li><span class="ref-number">[3]</span> Juárez-Ramírez, María Chanel, Andrés Lira-Noriega, Robert H. Manson, Javier Nori, &amp; Eduardo Pineda. (2024). <strong>Assessing the potential role of different land covers for conserving threatened amphibian diversity in a human-modified tropical mountain landscape.</strong> <em>Biological Conservation</em>, 299: 110790. DOI: <a href="https://doi.org/10.1016/j.biocon.2024.110790">10.1016/j.biocon.2024.110790</a></li>
+<li><span class="ref-number">[2]</span> Papaqui-Bello, Sonia Itzel, Andrés Lira-Noriega, &amp; Roger Guevara. (2024). <strong>Ant species distribution models reveal mixed elevational diversity patterns in complete elevation gradients.</strong> <em>Sociobiology</em>, 71(2). DOI: <a href="https://doi.org/10.13102/sociobiology.v71i2.10503">10.13102/sociobiology.v71i2.10503</a></li>
+<li><span class="ref-number">[1]</span> Tinoco-Domínguez, Eurídice et al. (2024). <strong>American mistletoes: A dataset of Phoradendron species and their hosts across their distribution range.</strong> <em>Ecology</em>. DOI: <a href="https://doi.org/10.1002/ecy.4394">10.1002/ecy.4394</a></li>
+</ol>
+</section>
+</div>
 </main>
 </body>
 </html>
